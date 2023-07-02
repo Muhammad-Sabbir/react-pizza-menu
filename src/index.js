@@ -70,11 +70,31 @@ function Menu() {
   return (
     <main className="menu">
       <h2>Our Menu</h2>
-      <Pizza />
-      <Pizza />
-      <Pizza />
-      <Pizza />
+      <Pizza
+        name="Pizza Spinaci"
+        ingredients="Tomato, mozarella, mushrooms, and onion"
+        photoName="pizzas/spinaci.jpg"
+        price={10}
+      />
+      <Pizza
+        name="Pizza Funghi"
+        ingredients="Tomato, mushrooms"
+        photoName="pizzas/funghi.jpg"
+        price={12}
+      />
     </main>
+  );
+}
+
+function Pizza(props) {
+  return (
+    <div>
+      <img src={props.photoName} alt="iamge of spicaci" />
+      <div>
+        <h3>{props.name}</h3>
+        <p>{props.ingredients}</p>
+      </div>
+    </div>
   );
 }
 
@@ -90,16 +110,6 @@ function Footer() {
     <footer className="footer">
       {new Date().toLocaleDateString()}, We are currently Open
     </footer>
-  );
-}
-
-function Pizza() {
-  return (
-    <div>
-      <img src="pizzas/spinaci.jpg" alt="iamge of spicaci" />
-      <h2>Pizza</h2>
-      <p>Tomato, mozarella, mushrooms, and onion</p>
-    </div>
   );
 }
 
