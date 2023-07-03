@@ -9,7 +9,7 @@ git push -u origin main
 
 
 git add --all
-git commit -m "Chapter 05: Working With Components, Props, and JSX>> Lecture: 11.Passing and Receiving Props"
+git commit -m "Chapter 05: Working With Components, Props, and JSX>> Lecture 15: Rendering Lists"
 git push -u origin main
 
 
