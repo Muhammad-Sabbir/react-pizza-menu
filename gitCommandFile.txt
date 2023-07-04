@@ -9,7 +9,7 @@ git push -u origin main
 
 
 git add --all
-git commit -m "Chapter 05: Working With Components, Props, and JSX>> Lecture 16: Conditional Rendering With &&"
+git commit -m "Chapter 05: Working With Components, Props, and JSX>> Lecture 17: Conditional Rendering With Ternaries"
 git push -u origin main
 
 
