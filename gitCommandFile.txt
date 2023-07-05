@@ -1,7 +1,7 @@
 echo "# react-pizza-menu" >> README.md
 git init
 git add README.md
-git commit -m "Chapter 05: Working With Components, Props, and JSX>> Lecture: 10. Styling React Applications"
+git commit -m "Chapter 05: Working With Components, Props, and JSX>> Lecture 18: Conditional Rendering With Multiple Returns"
 git branch -M main
 git remote add origin https://github.com/Muhammad-Sabbir/react-pizza-menu.git
 git push -u origin main
@@ -9,7 +9,7 @@ git push -u origin main
 
 
 git add --all
-git commit -m "Chapter 05: Working With Components, Props, and JSX>> Lecture 17: Conditional Rendering With Ternaries"
+git commit -m "Chapter 05: Working With Components, Props, and JSX>> Lecture 18: Conditional Rendering With Multiple Returns"
 git push -u origin main
 
 

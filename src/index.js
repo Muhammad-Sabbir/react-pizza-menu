@@ -108,6 +108,8 @@ function Menu() {
 }
 
 function Pizza(props) {
+  console.log(props);
+  if (props.pizzaObj.soldOut) return null;
   return (
     <li className="pizza">
       <img src={props.pizzaObj.photoName} alt="iamge of spicaci" />
@@ -127,8 +129,19 @@ function Footer() {
   // if (hour >= openHour && hour <= closeHour) alert("We're currently open!");
   // else alert("We' currently close!");
 
+  {
+    /* conditional rendering with multiple return  */
+  }
+
+  // if (!isOpen)
+  //   return (
+  //     <p>
+  //       We're happy to welcome you between {openHour}:00 and {closeHour}:00 .
+  //     </p>
+  //   );
   return (
     <footer className="footer">
+      {/* and operator for conditional rendering */}
       {/* {isOpen && (
         <div className="order">
           <p>
@@ -138,7 +151,8 @@ function Footer() {
           <button className="btn">Order</button>
         </div>
       )} */}
-      {/* and operator for conditional rendering */}
+
+      {/* turnery operator for conditional rendering  */}
       {isOpen ? (
         <div className="order">
           <p>
