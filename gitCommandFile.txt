@@ -9,7 +9,7 @@ git push -u origin main
 
 
 git add --all
-git commit -m "Chapter 05: Working With Components, Props, and JSX>> Lecture 20: Destructuring Props"
+git commit -m "Chapter 05: Working With Components, Props, and JSX>> Lecture 22: React Fragments"
 git push -u origin main
 
 

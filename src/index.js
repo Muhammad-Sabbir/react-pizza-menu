@@ -82,13 +82,22 @@ function Menu() {
           ))}
         </ul>
       )} */}
+
       {numPizzas > 0 ? (
-        <ul className="pizzas">
-          {pizzas.map((pizza) => (
-            <Pizza pizzaObj={pizza} key={pizza.name} />
-          ))}
-        </ul>
+        <>
+          <p>
+            Authentic Italian cuisine. 6 creative dishes to choose from. All
+            from our stone oven, all organic, all delicious.
+          </p>
+          <ul className="pizzas">
+            {pizzas.map((pizza) => (
+              <Pizza pizzaObj={pizza} key={pizza.name} />
+            ))}
+          </ul>
+        </>
       ) : (
+        // here if we want to add key into a fragment, then there is another way to write fragment with key, <React.Fragment key={'key_1'}></React.Fragment> and this key is needed when we use map function and return html
+
         <p>We're still working on our menu. Please come back leter :)</p>
       )}
       {/* <Pizza
